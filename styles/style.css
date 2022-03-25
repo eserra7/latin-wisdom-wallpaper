@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+
+.main-container {
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+    .main-container p {
+        font-size: 4rem;
+        font-style: italic;
+        font-family: fantasy;
+        padding: 10%;
+        text-align: end;
+        margin-top: -15%;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.button-image {
+    width: 100px;
+}
+
+
+@media only screen and (max-device-width : 992px) and (orientation : portrait) { 
+    .main-container p {
+        font-size: 6rem;
+    }
+    
+    .button-image {
+        width: 200px;
+    }
+
+    .button-text {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-device-width : 992px) and (orientation : landscape) { 
+    .button-container {
+        bottom: 20px;   
+    }
+
+    .main-container p {
+        font-size: 2rem;
+    }
+}
